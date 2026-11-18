@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Privacy Policy · Martin's Mocktails</title>
+<meta name="description" content="How Martin's Mocktails collects, uses, shares and protects your personal data across our website, app and café.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Figtree:wght@400;500;600;700;800&display=swap">
+<style>
+:root{
+  --paper:#F5ECE1;--card:#FFF9F2;--ink:#022D3B;--brown:#5A3418;--soft:#6E5B4B;--line:#E3D3C0;
+  --orange:#F69A22;--orange-ink:#9A5300;--red:#C8372D;--green:#2E7D5B;
+  --display:"Anton","Impact","Arial Narrow Bold",sans-serif;
+  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(84px + env(safe-area-inset-top,0px))}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.65;overflow-x:clip}
+.g{padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1180px;margin:0 auto}
+h1,h2,h3{font-weight:400;margin:0;line-height:1;text-wrap:balance}
+a{color:var(--orange-ink);text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{color:var(--ink)}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:4px}
+.kicker{font-weight:800;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--orange-ink)}
+.fill{display:inline-block;background:#FFE1B3;color:var(--orange-ink);border:1.5px dashed var(--orange);border-radius:8px;padding:0 8px;font-weight:700;font-size:.92em;line-height:1.5}
+
+/* top bar */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:40;background:var(--ink)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--ink);color:var(--paper)}
+.bar .wrap{display:flex;align-items:center;gap:18px;padding-block:10px}
+.chip{background:#fff;border-radius:14px;padding:4px 10px;display:flex;flex:0 0 auto}
+.chip img{height:40px;width:auto;display:block}
+.bar nav{margin-left:auto;display:flex;gap:22px;font-weight:700;font-size:14px}
+.bar nav a{color:var(--paper);text-decoration:none;opacity:.8}
+.bar nav a:hover,.bar nav a[aria-current]{opacity:1;color:var(--orange)}
+.progress{position:absolute;left:0;bottom:0;height:3px;width:100%;background:var(--orange);transform-origin:left;transform:scaleX(0)}
+@media(max-width:640px){.bar nav{gap:14px;font-size:13px}.bar nav .hide-s{display:none}.chip img{height:34px}}
+
+/* hero */
+.hero{background:var(--ink);color:var(--paper);padding-block:56px 64px;position:relative;overflow:hidden}
+.hero .wrap{position:relative;z-index:1}
+.hero .kicker{color:var(--orange)}
+.hero h1{font-family:var(--display);font-size:clamp(64px,11vw,150px);text-transform:uppercase;line-height:.88;margin-top:14px}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero p.lead{max-width:60ch;font-size:18px;opacity:.88;margin:22px 0 0}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.meta span{border:1.5px solid rgba(245,236,225,.3);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700}
+.meta b{color:var(--orange);font-weight:800}
+.vinyl{position:absolute;right:-120px;top:50%;width:min(520px,60vw);aspect-ratio:1;transform:translateY(-50%);border-radius:50%;
+  background:repeating-radial-gradient(circle,#0b3a4a 0 3px,#022D3B 3px 6px);opacity:.55;animation:spin 18s linear infinite}
+.vinyl::after{content:"";position:absolute;inset:36%;border-radius:50%;background:var(--orange);opacity:.85}
+@keyframes spin{to{transform:translateY(-50%) rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.vinyl{animation:none}}
+@media(max-width:760px){.vinyl{opacity:.25;right:-200px}}
+
+/* summary */
+.glance{padding-block:56px 10px}
+.glance h2{font-family:var(--display);font-size:clamp(40px,5.6vw,72px);text-transform:uppercase;margin-top:10px}
+.gl-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:26px}
+.gl{background:var(--card);border:1.5px solid var(--line);border-radius:20px;padding:20px;min-width:0}
+.flag{display:inline-block;background:var(--orange);color:#fff;font-family:var(--display);font-size:15px;line-height:1;letter-spacing:.03em;padding:6px 16px 6px 10px;clip-path:polygon(0 0,100% 0,88% 50%,100% 100%,0 100%);transform:rotate(-3deg);text-transform:uppercase}
+.gl.red .flag{background:var(--red)}.gl.green .flag{background:var(--green)}.gl.ink .flag{background:var(--ink)}
+.gl h3{font-family:var(--display);font-size:24px;text-transform:uppercase;color:var(--brown);margin-top:14px;line-height:1.05}
+.gl p{margin:8px 0 0;font-size:14.5px;color:var(--soft)}
+@media(max-width:1000px){.gl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.gl-grid{grid-template-columns:1fr}}
+
+/* layout */
+.body{padding-block:48px 80px}
+.body .wrap{display:grid;grid-template-columns:270px minmax(0,1fr);gap:48px;align-items:start}
+.toc{position:sticky;top:calc(84px + env(safe-area-inset-top,0px));background:var(--card);border:1.5px solid var(--line);border-radius:22px;padding:18px 14px 14px;max-height:calc(100vh - 110px);overflow:auto}
+.toc .kicker{padding:0 8px}
+.toc ol{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:2px;counter-reset:t}
+.toc a{display:grid;grid-template-columns:30px 1fr;gap:6px;align-items:baseline;padding:7px 8px;border-radius:12px;text-decoration:none;color:var(--ink);font-weight:600;font-size:14px;line-height:1.3}
+.toc a span{font-family:var(--display);font-size:16px;color:var(--orange-ink)}
+.toc a:hover{background:#F2E3D0}
+.toc a.on{background:var(--ink);color:var(--paper)}
+.toc a.on span{color:var(--orange)}
+.toc-btn{display:none}
+@media(max-width:960px){
+  .body .wrap{grid-template-columns:1fr;gap:20px}
+  .toc{position:static;max-height:none}
+  .toc ol{display:none}.toc.open ol{display:grid}
+  .toc-btn{display:flex;width:100%;justify-content:space-between;align-items:center;background:none;border:0;font:800 15px var(--body);color:var(--ink);cursor:pointer;padding:2px 8px}
+  .toc>.kicker{display:none}
+  .toc-btn svg{width:18px;height:18px;transition:transform .2s}.toc.open .toc-btn svg{transform:rotate(180deg)}
+}
+
+/* sections */
+.sec{padding-bottom:44px;margin-bottom:44px;border-bottom:1.5px dashed var(--line)}
+.sec:last-child{border-bottom:0;margin-bottom:0}
+.sh{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+.ribbon{background:var(--brown);color:var(--orange);font-family:var(--display);font-size:clamp(24px,2.8vw,34px);text-transform:uppercase;letter-spacing:.02em;padding:8px 26px 8px 22px;clip-path:polygon(0 0,100% 0,96% 50%,100% 100%,0 100%,4% 50%);line-height:1.05}
+.trk{font-family:var(--display);font-size:44px;line-height:1;color:transparent;-webkit-text-stroke:1.5px var(--brown);opacity:.45}
+.sec p{margin:0 0 14px;max-width:72ch}
+.sec h3{font-family:var(--display);font-size:22px;text-transform:uppercase;letter-spacing:.02em;color:var(--brown);margin:26px 0 10px}
+.sec ul{margin:0 0 14px;padding-left:0;list-style:none;display:grid;gap:8px;max-width:74ch}
+.sec ul li{position:relative;padding-left:26px}
+.sec ul li::before{content:"♪";position:absolute;left:4px;top:0;color:var(--orange);font-weight:800}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:6px 0 14px}
+.card{background:var(--card);border:1.5px solid var(--line);border-radius:18px;padding:16px 18px;min-width:0}
+.card h4{margin:0;font-family:var(--display);font-weight:400;font-size:20px;text-transform:uppercase;letter-spacing:.02em;color:var(--ink);line-height:1.1}
+.card p{margin:6px 0 0;font-size:14.5px;color:var(--soft)}
+.card .tag{display:inline-block;margin-top:10px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:var(--ink);color:var(--paper);border-radius:999px;padding:3px 10px}
+@media(max-width:700px){.cards{grid-template-columns:1fr}}
+.tbl{overflow-x:auto;border:1.5px solid var(--line);border-radius:18px;background:var(--card);margin:6px 0 14px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14.5px}
+th,td{text-align:left;padding:12px 16px;vertical-align:top;border-bottom:1px solid var(--line)}
+th{font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-ink);background:#F7E9D7}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:700;color:var(--ink)}
+td{color:var(--soft)}
+.note{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;border-radius:18px;padding:16px 18px;margin:8px 0 14px;max-width:76ch;background:#FFF1DC;border:1.5px solid #F4C98A}
+.note.ink{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.note.ink a{color:var(--orange)}
+.note .ic{width:34px;height:34px;border-radius:50%;background:var(--orange);color:var(--ink);display:grid;place-items:center;font-family:var(--display);font-size:18px}
+.note p{margin:0;font-size:15px}
+.never{background:var(--red);color:#fff;border-radius:22px;padding:22px 24px;margin:6px 0 14px;max-width:76ch}
+.never h4{margin:0 0 10px;font-family:var(--display);font-weight:400;font-size:28px;text-transform:uppercase}
+.never ul{margin:0;gap:8px}
+.never ul li{padding-left:34px;font-weight:600}
+.never ul li::before{content:"✕";left:0;top:2px;width:22px;height:22px;border-radius:50%;background:#fff;color:var(--red);display:grid;place-items:center;font-size:11px}
+.rights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:6px 0 16px}
+.right{background:var(--card);border:1.5px solid var(--line);border-radius:18px;padding:16px;min-width:0}
+.right b{display:block;font-family:var(--display);font-weight:400;font-size:34px;color:var(--orange);line-height:1}
+.right h4{margin:8px 0 0;font-family:var(--display);font-weight:400;font-size:20px;text-transform:uppercase;color:var(--brown)}
+.right p{margin:4px 0 0;font-size:14px;color:var(--soft)}
+@media(max-width:860px){.rights{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.rights{grid-template-columns:1fr}}
+.steps{counter-reset:s;list-style:none;padding:0;margin:6px 0 16px;display:grid;gap:10px;max-width:76ch}
+.steps li{counter-increment:s;display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:start;background:var(--card);border:1.5px solid var(--line);border-radius:16px;padding:12px 14px}
+.steps li::before{content:counter(s);width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--paper);display:grid;place-items:center;font-family:var(--display);font-size:18px}
+.contact{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:8px}
+.cc{background:var(--orange);color:var(--ink);border-radius:22px;padding:22px}
+.cc.dark{background:var(--ink);color:var(--paper)}
+.cc h4{margin:0 0 12px;font-family:var(--display);font-weight:400;font-size:28px;text-transform:uppercase;line-height:1}
+.cc dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 14px;font-size:15px}
+.cc dt{font-weight:800;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;padding-top:3px;opacity:.75}
+.cc dd{margin:0;font-weight:600;min-width:0;overflow-wrap:anywhere}
+.cc.dark .fill{background:rgba(246,154,34,.18);color:var(--orange)}
+.cc .fill{background:rgba(255,255,255,.55);color:var(--brown);border-color:var(--brown)}
+.copy{margin-top:14px;border:2px solid currentColor;background:none;color:inherit;border-radius:999px;padding:8px 16px;font:800 13px var(--body);cursor:pointer}
+@media(max-width:760px){.contact{grid-template-columns:1fr}}
+
+footer{background:var(--ink);color:var(--paper);padding-block:40px calc(40px + env(safe-area-inset-bottom,0px))}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+footer .lg{background:#fff;border-radius:18px;padding:8px 14px;display:inline-flex}
+footer .lg img{height:80px;width:auto;display:block}
+footer p{margin:0;opacity:.75;font-size:14px}
+footer nav{display:flex;gap:18px;flex-wrap:wrap;font-weight:700;font-size:14px}
+footer nav a{color:var(--paper);text-decoration:none;opacity:.85}
+footer nav a:hover{color:var(--orange);opacity:1}
+.top-btn{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:35;width:50px;height:50px;border-radius:50%;border:0;background:var(--orange);color:var(--ink);cursor:pointer;display:grid;place-items:center;box-shadow:0 10px 26px rgba(2,45,59,.3);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;transform:translateY(10px)}
+.top-btn.on{opacity:1;pointer-events:auto;transform:none}
+.top-btn svg{width:20px;height:20px}
+.toast{position:fixed;left:50%;bottom:calc(80px + env(safe-area-inset-bottom,0px));transform:translate(-50%,16px);background:var(--ink);color:#fff;border-radius:999px;padding:10px 18px;font-weight:700;font-size:14px;opacity:0;transition:.3s;pointer-events:none;z-index:50}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+@media print{.bar,.toc,.top-btn,.vinyl{display:none!important}.body .wrap{grid-template-columns:1fr}.hero{background:#fff;color:#000}body{background:#fff}}
+</style>
+</head>
+<body>
+
+<header class="bar g">
+  <div class="wrap">
+    <a class="chip" href="#top" aria-label="Martin's Mocktails home"><img src="data:image/webp;base64,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" alt="Martin's Mocktails"></a>
+    <nav aria-label="Page">
+      <a href="#glance">At a glance</a>
+      <a href="#rights" class="hide-s">Your rights</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+  <div class="progress" id="prog"></div>
+</header>
+
+<main id="top">
+<section class="hero g">
+  <div class="vinyl" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="kicker">Legal · Liner notes</div>
+    <h1>Privacy<br><em>Policy</em></h1>
+    <p class="lead">We make fresh drinks with no added sugar and no water. We treat your data the same way: only what we need, nothing hidden, nothing sold. This page explains, in plain words, what we collect when you use our website, app or café, why we need it, and what you can do about it.</p>
+    <div class="meta">
+      <span><b>Last updated</b> 18 November 2026</span>
+      <span><b>Applies to</b> Website · App · Café</span>
+      <span><b>Law</b> India's DPDP Act, 2023</span>
+    </div>
+  </div>
+</section>
+
+<section class="glance g" id="glance">
+  <div class="wrap">
+    <div class="kicker">The short version</div>
+    <h2>At a glance</h2>
+    <div class="gl-grid">
+      <div class="gl"><span class="flag">What</span><h3>Only what we need</h3><p>Your phone number to sign in, your name, your orders and your wallet. That is most of it.</p></div>
+      <div class="gl red"><span class="flag">Never</span><h3>We don't sell it</h3><p>We never sell, rent or trade your personal data, and we don't show third-party ads.</p></div>
+      <div class="gl green"><span class="flag">Where</span><h3>Kept in India</h3><p>Our servers and database are hosted in India, encrypted, and backed up daily.</p></div>
+      <div class="gl ink"><span class="flag">You</span><h3>You're in control</h3><p>See, fix or delete your data any time. Delete your account right inside the app.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="body g">
+  <div class="wrap">
+    <aside class="toc" id="toc" aria-label="Contents">
+      <button class="toc-btn" id="tocBtn" aria-expanded="false" aria-controls="tocList">Track list <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="kicker">Track list</div>
+      <ol id="tocList"></ol>
+    </aside>
+
+    <article id="policy">
+
+      <section class="sec" id="who" data-t="Who we are">
+        <div class="sh"><span class="trk">01</span><h2 class="ribbon">Who we are</h2></div>
+        <p>Martin's Mocktails is a wellness mocktail bar and café that serves fresh juices, mocktails, smoothies, bowls and bites, with drinks named after the songs we love. In this policy, "Martin's", "we", "us" and "our" mean <strong>Oispic International</strong>, the business that runs the Martin's Mocktails café, website and app.</p>
+        <p>Under India's Digital Personal Data Protection Act, 2023 ("DPDP Act"), we are the <strong>data fiduciary</strong> for the personal data described here. That means we decide why and how it is used, and we are responsible for looking after it.</p>
+      </section>
+
+      <section class="sec" id="covers" data-t="What this covers">
+        <div class="sh"><span class="trk">02</span><h2 class="ribbon">What this covers</h2></div>
+        <p>This policy applies whenever you deal with us through:</p>
+        <ul>
+          <li><strong>Our website</strong>, including the menu, the mood quiz and the order list you can build there.</li>
+          <li><strong>The Martin's Mocktails app</strong> on Android, iOS and the web, including ordering, the wallet, gifts, group orders, the Club, plans and rewards.</li>
+          <li><strong>Our café</strong>, when you order at the counter using your phone number, enquire about a party counter, or book an event with us.</li>
+          <li><strong>Ask Martin's</strong>, the in-app assistant that answers questions about our menu.</li>
+        </ul>
+        <p>It does not cover other websites or apps we link to, such as Instagram or WhatsApp. They have their own privacy policies.</p>
+      </section>
+
+      <section class="sec" id="collect" data-t="What we collect">
+        <div class="sh"><span class="trk">03</span><h2 class="ribbon">What we collect</h2></div>
+        <p>We collect information in three ways: what you give us, what is created when you use our services, and a small amount that comes from the partners who help us run them.</p>
+
+        <h3>Things you give us</h3>
+        <div class="cards">
+          <div class="card"><h4>Account details</h4><p>Your mobile number (used to sign in with a one-time code), your name, and, if you choose, your birthday (day and month only) so we can send you a birthday treat.</p><span class="tag">Needed for the app</span></div>
+          <div class="card"><h4>Taste preferences</h4><p>Optional choices that personalise the menu: your wellness goal, ingredients you'd rather avoid, your favourite artists and your usual ice level.</p><span class="tag">Optional</span></div>
+          <div class="card"><h4>Orders and requests</h4><p>What you order, sizes, notes for the kitchen, group orders you start or join, and party counter or event enquiries (name, phone, date, number of guests and your message).</p><span class="tag">Needed to serve you</span></div>
+          <div class="card"><h4>Gifts and referrals</h4><p>If you send wallet credit as a gift or invite a friend, the phone number you send it to, and the referral code you used when you joined.</p><span class="tag">Only if you use them</span></div>
+        </div>
+
+        <h3>Things created when you use our services</h3>
+        <div class="cards">
+          <div class="card"><h4>Order and wallet history</h4><p>Your past orders, wallet top-ups, spends, refunds, bonuses, gifts and rewards, Club membership and plan status, and the totals that decide which rewards you've earned.</p></div>
+          <div class="card"><h4>Payment records</h4><p>The amount, date, status and reference number of each payment. Your card, UPI or bank details are handled by our payment partner and <strong>never reach our servers</strong>.</p></div>
+          <div class="card"><h4>Device information</h4><p>A notification token and your device type (Android, iOS or web), so we can tell you when your order is ready. We also keep basic technical logs (such as time of request and errors) to keep the service secure and working.</p></div>
+          <div class="card"><h4>Questions to Ask Martin's</h4><p>The question you type. We send the assistant only your question and our menu, never your name, phone number, birthday or order history.</p></div>
+        </div>
+
+        <h3>Things we don't collect</h3>
+        <ul>
+          <li>We don't ask for your location, contacts, photos, microphone or camera.</li>
+          <li>We don't collect or store your card number, CVV, UPI PIN or bank login.</li>
+          <li>The website's <strong>mood quiz</strong> and <strong>order list</strong> run inside your own browser. Your answers and the drinks you pick are not sent to us unless you choose to share the list with us, for example by sending it on WhatsApp.</li>
+          <li>We don't knowingly collect health records. Menu descriptions such as "immunity boost" describe ingredients; they are not based on information about you.</li>
+        </ul>
+        <div class="note"><span class="ic">!</span><p><strong>About the "ingredients to avoid" setting.</strong> If you list something you avoid (for example, a fruit you're allergic to), we use it only to filter and flag menu items for you. It isn't shared with anyone. Please still tell our staff about allergies when you order, as our kitchen handles many fruits, nuts and dairy.</p></div>
+      </section>
+
+      <section class="sec" id="use" data-t="How we use it">
+        <div class="sh"><span class="trk">04</span><h2 class="ribbon">How we use it</h2></div>
+        <p>We use your personal data only for the purposes below. We ask for your consent where the law needs it, and you can withdraw that consent at any time (see <a href="#rights">Your rights</a>).</p>
+        <div class="tbl"><table>
+          <thead><tr><th>Purpose</th><th>What we use</th><th>Why we're allowed to</th></tr></thead>
+          <tbody>
+            <tr><td>Create your account and sign you in</td><td>Phone number, one-time code, name</td><td>Your consent when you sign up</td></tr>
+            <tr><td>Take, make and hand over your order</td><td>Order details, name, notes, order status</td><td>Your consent; needed to provide what you asked for</td></tr>
+            <tr><td>Take payments and run your wallet</td><td>Payment references, wallet transactions</td><td>Your consent; needed to provide the service</td></tr>
+            <tr><td>Rewards, Club, plans, birthday treat and referrals</td><td>Order totals, Club and plan status, birthday, referral code</td><td>Your consent when you join or use them</td></tr>
+            <tr><td>Personalise the menu</td><td>Goal, ingredients to avoid, favourite artists, past orders</td><td>Your consent (optional settings)</td></tr>
+            <tr><td>Order updates ("your drink is ready")</td><td>Notification token, order status</td><td>Your consent when you allow notifications</td></tr>
+            <tr><td>Offers, new menu items and event news</td><td>Notification token, preferences</td><td>Your consent; you can switch these off any time</td></tr>
+            <tr><td>Reply to enquiries and party bookings</td><td>Name, phone, date, guests, message</td><td>Your consent when you send the request</td></tr>
+            <tr><td>Keep tax and accounting records</td><td>Bills and payment records</td><td>Legal obligation under GST and tax law</td></tr>
+            <tr><td>Keep the service safe and fix problems</td><td>Technical logs, staff activity logs</td><td>Legitimate use to prevent fraud and misuse, and to meet our security duties</td></tr>
+          </tbody>
+        </table></div>
+        <p>We don't use your data to make automated decisions that have legal or similarly serious effects on you, and we don't build advertising profiles.</p>
+      </section>
+
+      <section class="sec" id="share" data-t="Who we share it with">
+        <div class="sh"><span class="trk">05</span><h2 class="ribbon">Who we share it with</h2></div>
+        <div class="never">
+          <h4>We never</h4>
+          <ul>
+            <li>Sell or rent your personal data</li>
+            <li>Share it with advertisers or data brokers</li>
+            <li>Send your personal details to the Ask Martin's assistant</li>
+          </ul>
+        </div>
+        <p>We share data only with trusted service providers who help us run Martin's, and only what each one needs. They act on our instructions, must keep your data secure, and may not use it for their own purposes.</p>
+        <div class="tbl"><table>
+          <thead><tr><th>Partner</th><th>What they do for us</th><th>What they receive</th></tr></thead>
+          <tbody>
+            <tr><td>Razorpay</td><td>Processes payments by UPI and card</td><td>Amount, order reference, and the payment details you enter on their secure screen</td></tr>
+            <tr><td>SMS provider (<span class="fill">MSG91 or Twilio</span>)</td><td>Sends your sign-in code</td><td>Your mobile number and the code</td></tr>
+            <tr><td>Google Firebase Cloud Messaging</td><td>Delivers app notifications</td><td>Your notification token and the message text</td></tr>
+            <tr><td>Cloud hosting (<span class="fill">AWS Mumbai or DigitalOcean Bangalore</span>) and MongoDB Atlas (Mumbai)</td><td>Hosts our app, website and database in India</td><td>Stored data, encrypted at rest</td></tr>
+            <tr><td>AI provider for Ask Martin's (<span class="fill">provider name</span>)</td><td>Answers menu questions</td><td>Your question and our menu only</td></tr>
+            <tr><td>Google Fonts</td><td>Serves the fonts on our website</td><td>Your browser's technical details (such as IP address), as with any web request</td></tr>
+          </tbody>
+        </table></div>
+        <p>We may also share information if the law requires it, for example with tax authorities or in response to a valid request from a court or government agency, or to protect the safety of our customers and staff. If Martin's is ever sold or merged, your data would move to the new owner under the same promises in this policy, and we would tell you first.</p>
+      </section>
+
+      <section class="sec" id="where" data-t="Where it's stored">
+        <div class="sh"><span class="trk">06</span><h2 class="ribbon">Where it's stored</h2></div>
+        <p>Our servers and database are located in India. Some of our partners (such as Google for notifications and fonts, and the AI provider for Ask Martin's) may process limited data outside India. When that happens, we only send what's needed for that task, and we follow any restrictions the Government of India sets on transfers abroad.</p>
+      </section>
+
+      <section class="sec" id="keep" data-t="How long we keep it">
+        <div class="sh"><span class="trk">07</span><h2 class="ribbon">How long we keep it</h2></div>
+        <p>We keep personal data only as long as we need it for the purpose it was collected, or as long as the law requires.</p>
+        <div class="tbl"><table>
+          <thead><tr><th>Data</th><th>How long</th></tr></thead>
+          <tbody>
+            <tr><td>Sign-in codes</td><td>A few minutes, until they expire. We store them only in scrambled (hashed) form.</td></tr>
+            <tr><td>Your account, preferences and wallet</td><td>While your account is open. When you delete it, we remove your profile within 30 days.</td></tr>
+            <tr><td>Bills, orders and payment records</td><td>For as long as GST and tax law requires. After you delete your account, we keep these with your name and phone number removed.</td></tr>
+            <tr><td>Enquiries and party bookings</td><td>Up to 12 months after the event or enquiry, unless you become a customer.</td></tr>
+            <tr><td>Technical and security logs</td><td>Up to 12 months, or longer if needed to investigate a security incident.</td></tr>
+            <tr><td>Backups</td><td>Overwritten on a rolling basis, so deleted data leaves our backups shortly after.</td></tr>
+          </tbody>
+        </table></div>
+        <p>Any money left in your wallet when you close your account is handled under our <span class="fill">Wallet &amp; refund terms link</span>. Please use or request a refund of your balance before you delete your account.</p>
+      </section>
+
+      <section class="sec" id="security" data-t="How we protect it">
+        <div class="sh"><span class="trk">08</span><h2 class="ribbon">How we protect it</h2></div>
+        <ul>
+          <li>All connections to our website, app and servers use HTTPS encryption.</li>
+          <li>Our database is encrypted at rest, sits on a private network that only our app servers can reach, and is backed up every day.</li>
+          <li>Sign-in codes and staff PINs are stored only in scrambled (hashed) form.</li>
+          <li>Our staff see only what their role needs, and every action in our admin system is logged.</li>
+          <li>We check every request our app receives to block misuse.</li>
+        </ul>
+        <p>No system is perfectly secure. If a breach ever affects your personal data, we will tell you and the Data Protection Board of India as the law requires, explain what happened, and tell you what we are doing about it.</p>
+      </section>
+
+      <section class="sec" id="rights" data-t="Your rights">
+        <div class="sh"><span class="trk">09</span><h2 class="ribbon">Your rights</h2></div>
+        <p>Under the DPDP Act you have these rights. Using them is free.</p>
+        <div class="rights">
+          <div class="right"><b>A</b><h4>Know &amp; access</h4><p>Ask what data we hold about you, how we use it, and who we've shared it with.</p></div>
+          <div class="right"><b>B</b><h4>Correct &amp; update</h4><p>Fix anything that's wrong or out of date. Most details you can edit yourself in the app.</p></div>
+          <div class="right"><b>C</b><h4>Erase</h4><p>Delete your account and personal data, except records the law makes us keep.</p></div>
+          <div class="right"><b>D</b><h4>Withdraw consent</h4><p>Change your mind at any time, for example by switching off offers or optional settings.</p></div>
+          <div class="right"><b>E</b><h4>Complain</h4><p>Raise a complaint with us, and then with the Data Protection Board of India.</p></div>
+          <div class="right"><b>F</b><h4>Nominate</h4><p>Name someone to use these rights for you if you're unable to, through death or incapacity.</p></div>
+        </div>
+        <h3>How to use them</h3>
+        <ol class="steps">
+          <li><span><strong>In the app:</strong> go to Profile to edit your details, change notification settings, or choose <em>Delete account</em>.</span></li>
+          <li><span><strong>By email or phone:</strong> contact us using the details in <a href="#contact">Contact us</a>. We may ask you to confirm a one-time code sent to your registered mobile number, so we know it's really you.</span></li>
+          <li><span><strong>We reply</strong> within 30 days, and tell you if we need more time and why.</span></li>
+        </ol>
+        <p>Withdrawing consent doesn't affect anything we did before you withdrew it. If you withdraw consent that's needed for a service (for example, your phone number for sign-in), we won't be able to keep providing that service.</p>
+      </section>
+
+      <section class="sec" id="children" data-t="Children">
+        <div class="sh"><span class="trk">10</span><h2 class="ribbon">Children</h2></div>
+        <p>Our app accounts are for people aged 18 and over. Our kids' menu (Twinkle Toes) is meant to be ordered by a parent or guardian. We don't knowingly collect personal data from anyone under 18 without verifiable consent from a parent or guardian, and we don't track children's behaviour or send them targeted offers.</p>
+        <p>If you think a child has given us their data without permission, please <a href="#contact">contact us</a> and we will delete it.</p>
+      </section>
+
+      <section class="sec" id="cookies" data-t="Cookies and browser storage">
+        <div class="sh"><span class="trk">11</span><h2 class="ribbon">Cookies &amp; storage</h2></div>
+        <p>Our website does not use advertising or tracking cookies. It may save a few small things in your own browser so the site works the way you left it, such as the drinks in your order list or whether you turned the café music on. This stays on your device, and you can clear it at any time in your browser settings.</p>
+        <p>The app stores your sign-in session securely on your phone so you don't have to sign in every time. Signing out removes it.</p>
+      </section>
+
+      <section class="sec" id="notifications" data-t="Messages and notifications">
+        <div class="sh"><span class="trk">12</span><h2 class="ribbon">Messages &amp; offers</h2></div>
+        <p>We send two kinds of messages:</p>
+        <ul>
+          <li><strong>Service messages</strong>, such as your sign-in code, payment confirmations and "your order is ready". These are part of the service.</li>
+          <li><strong>Offers and news</strong>, such as new drinks, events and rewards. You can turn these off in the app's settings or your phone's notification settings at any time.</li>
+        </ul>
+      </section>
+
+      <section class="sec" id="future" data-t="New features">
+        <div class="sh"><span class="trk">13</span><h2 class="ribbon">New features</h2></div>
+        <p>We're always working on new things. If we add a feature that needs new kinds of personal data, such as health or activity data from a wearable device, we will update this policy first and ask for your clear, separate consent before collecting anything. Such features will always be optional.</p>
+      </section>
+
+      <section class="sec" id="changes" data-t="Changes to this policy">
+        <div class="sh"><span class="trk">14</span><h2 class="ribbon">Changes</h2></div>
+        <p>We may update this policy from time to time. We'll change the "Last updated" date at the top, and if a change is significant we'll tell you in the app or by message before it takes effect. Where a change needs your consent, we'll ask for it.</p>
+      </section>
+
+      <section class="sec" id="contact" data-t="Contact us">
+        <div class="sh"><span class="trk">15</span><h2 class="ribbon">Contact us</h2></div>
+        <p>Questions, requests or complaints about your personal data? Reach out to us. You can also write to us in Tamil.</p>
+        <div class="contact">
+          <div class="cc">
+            <h4>Privacy &amp; grievances</h4>
+            <dl>
+                            <dt>Email</dt><dd id="em">martinsmocktails@gmail.com</dd>
+              <dt>Phone</dt><dd>+91 80562 86505</dd>
+                          </dl>
+            <button class="copy" id="copyEm" type="button">Copy email address</button>
+          </div>
+          <div class="cc dark">
+            <h4>Martin's Mocktails</h4>
+            <dl>
+              <dt>Business</dt><dd>Oispic International</dd>
+              <dt>Address</dt><dd>M29, 4, 25th Cross Street, Besant Nagar, Chennai, Tamil Nadu 600090</dd>
+                            <dt>Email</dt><dd>martinsmocktails@gmail.com</dd>
+              <dt>Phone</dt><dd>+91 80562 86505</dd>
+              <dt>Instagram</dt><dd>@mart.mocktails</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="note ink" style="margin-top:16px"><span class="ic">i</span><p>If you're not satisfied with our reply, you can complain to the <strong>Data Protection Board of India</strong> through its official website. We'd appreciate the chance to fix things with you first.</p></div>
+        <p style="margin-top:14px;font-size:14px;color:var(--soft)">This policy is governed by the laws of India, and the courts at Chennai, Tamil Nadu have jurisdiction.</p>
+      </section>
+
+    </article>
+  </div>
+</section>
+</main>
+
+<footer class="g">
+  <div class="wrap">
+    <a class="lg" href="#top" aria-label="Back to top"><img src="data:image/webp;base64,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" alt="Martin's Mocktails"></a>
+    <div>
+      <nav aria-label="Footer"><a href="#glance">At a glance</a><a href="#collect">What we collect</a><a href="#rights">Your rights</a><a href="#contact">Contact</a></nav>
+      <p style="margin-top:12px">Stay healthy. Stay happy. Stay in rhythm with life.<br>© 2026 Martin's Mocktails · Privacy Policy, last updated 18 November 2026</p>
+    </div>
+  </div>
+</footer>
+
+<button class="top-btn" id="topBtn" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+  var secs=[].slice.call(document.querySelectorAll('.sec'));
+  var list=document.getElementById('tocList');
+  secs.forEach(function(s,i){
+    var li=document.createElement('li');
+    var a=document.createElement('a');a.href='#'+s.id;
+    a.innerHTML='<span>'+String(i+1).padStart(2,'0')+'</span>'+s.getAttribute('data-t');
+    li.appendChild(a);list.appendChild(li);
+  });
+  var links=[].slice.call(list.querySelectorAll('a'));
+  var toc=document.getElementById('toc'),btn=document.getElementById('tocBtn');
+  btn.addEventListener('click',function(){var o=toc.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+  links.forEach(function(a){a.addEventListener('click',function(){toc.classList.remove('open');btn.setAttribute('aria-expanded','false')})});
+
+  var prog=document.getElementById('prog'),topBtn=document.getElementById('topBtn');
+  function onScroll(){
+    var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+    prog.style.transform='scaleX('+(max>0?h.scrollTop/max:0)+')';
+    topBtn.classList.toggle('on',h.scrollTop>700);
+    var cur=null,y=window.innerHeight*0.3;
+    secs.forEach(function(s){if(s.getBoundingClientRect().top<y)cur=s.id});
+    links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+cur)});
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  topBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+
+  var toast=document.getElementById('toast'),tt;
+  function say(m){toast.textContent=m;toast.classList.add('on');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('on')},2200)}
+  document.getElementById('copyEm').addEventListener('click',function(){
+    var t=document.getElementById('em').textContent.trim();
+    try{navigator.clipboard.writeText(t).then(function(){say('Email address copied')},function(){say(t)})}catch(e){say(t)}
+  });
+})();
+</script>
+</body>
+</html>
